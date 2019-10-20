@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>당신의 취미를 찾아드립니다</title>
+
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/simple-line-icons/css/simple-line-icons.css') }}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <link href="{{ url_for('static', filename='css/landing-page.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">취미찾기 스무고개!</a>
+    </div>
+  </nav>
+
+<div class="container">
+  <form action="/" accept-charset="utf-8" method="post">
+  성인입니까?<br>
+  <input type='radio' name='q1' value='1' /> O
+  <input type='radio' name='q1' value='-1' /> X
+  <br>
+  돈 얼마나 쓸 수 있니?<br>
+  <input type='radio' name='q2' value='1' /> 0~10만
+  <input type='radio' name='q2' value='0' /> 10만~100만
+  <input type='radio' name='q2' value='-1' /> 100만~
+  <br>
+  불건전한 취미 꺼리나?<br>
+  <input type='radio' name='q3' value='1' /> O
+  <input type='radio' name='q3' value='0' /> △
+  <input type='radio' name='q3' value='-1' /> X
+  <br>
+  취미생활의 깊이는 어느정도가 적당한가요?<br>
+  <input type='radio' name='q4' value='1' /> 가볍게 즐길
+  <input type='radio' name='q4' value='0' /> 아무거나
+  <input type='radio' name='q4' value='-1' /> 하드코어
+  <br>
+  스포츠를 좋아하나요?<br>
+  <input type='radio' name='q5' value='1' /> O
+  <input type='radio' name='q5' value='0' /> △
+  <input type='radio' name='q5' value='-1' /> X
+  <br>
+  경쟁을 좋아하나요?<br>
+  <input type='radio' name='q6' value='1' /> O
+  <input type='radio' name='q6' value='0' /> △
+  <input type='radio' name='q6' value='-1' /> X
+  <br>
+  활동적인 취미를 좋아하나요?<br>
+  <input type='radio' name='q7' value='1' /> O
+  <input type='radio' name='q7' value='0' /> △
+  <input type='radio' name='q7' value='-1' /> X
+  <br>
+  예체능을 할 수 있나요?<br>
+  <input type='radio' name='q8' value='1' /> O
+  <input type='radio' name='q8' value='0' /> △
+  <input type='radio' name='q8' value='-1' /> X
+  <br>
+  취미 활동을 위해 동아리나 동호회에 참가하는 걸 선호하시나요?<br>
+  <input type='radio' name='q9' value='1' /> O
+  <input type='radio' name='q9' value='0' /> △
+  <input type='radio' name='q9' value='-1' /> X
+  <br>
+  게임을 좋아하시나요?<br>
+  <input type='radio' name='q10' value='1' /> O
+  <input type='radio' name='q10' value='0' /> △
+  <input type='radio' name='q10' value='-1' /> X
+  <br>
+  <button type="submit" class="btn btn-block btn-lg btn-primary">제출</button>
+  </form>
+</div>
+
+  <footer class="footer bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <p class="text-muted small mb-4 mb-lg-0">&copy; 김태겸, 박규현</p>
+        </div>
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mr-3">
+              <a href="https://web.facebook.com/profile.php?id=100022859261333">
+                <i class="fab fa-facebook fa-2x fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+</body>
+
+</html>
